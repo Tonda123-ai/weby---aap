@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -14,16 +15,63 @@
 
     <ul>
         <li><a href="filipiny.html">Filipíny</a></li>
-        <br>
         <li><a href="Londýn.html">Londýn</a></li>
-        <br>
         <li><a href="Pariz.html">Paříž</a></li>
     </ul>
+
+    <h2>Přehled výletů</h2>
+
+    <table border="1">
+        <tr>
+            <th>Místo</th>
+            <th>Stát</th>
+            <th>Zajímavost</th>
+        </tr>
+        <tr>
+            <td>Paříž</td>
+            <td>Francie</td>
+            <td>Eiffelova věž</td>
+        </tr>
+        <tr>
+            <td>Londýn</td>
+            <td>Anglie</td>
+            <td>Big Ben</td>
+        </tr>
+        <tr>
+            <td>Filipíny</td>
+            <td>Filipíny</td>
+            <td>Krásné pláže</td>
+        </tr>
+    </table>
 
     <h2>Moje oblíbená cesta</h2>
     <p>Nejvíce se mi líbily Filipíny.</p>
 
     <a href="https://www.google.com">Více informací</a>
 
+    <h2>Tvůj oblíbený výlet</h2>
+
+    <form>
+        <label for="jmeno">Tvoje jméno:</label>
+        <input type="text" id="jmeno" name="jmeno">
+        <br><br>
+
+        <label for="misto">Oblíbené místo:</label>
+        <select id="misto" name="misto">
+            <option>Paříž</option>
+            <option>Londýn</option>
+            <option>Filipíny</option>
+        </select>
+        <br><br>
+
+        <label for="zprava">Proč se ti tam líbilo?</label>
+        <br>
+        <textarea id="zprava" name="zprava" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Odeslat">
+    </form>
+
 </body>
 </html>
+```
