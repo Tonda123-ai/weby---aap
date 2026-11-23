@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <title>Moje cesty</title>
     <link rel="icon" href="./ikona.png">
+
     <style>
         body {
             background-image: url('2026-10-20_11-20-17_Lumina_1.png');
@@ -11,80 +13,146 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
+            font-family: sans-serif;
+            margin: 0;
+            text-align: center;
+            color: white;
         }
 
-        body {
-            font-family: sans-serif;
-            margin: 20px;
+        /* Tmavý obdélník kolem obsahu */
+        .obsah {
+            background-color: rgba(0, 0, 0, 0.75);
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+
+        p, li, label, a {
+            font-size: 20px;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        a {
+            color: lightblue;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        table {
+            margin: 0 auto;
+            font-size: 18px;
+            border-collapse: collapse;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid white;
+        }
+
+        form {
+            font-size: 18px;
+        }
+
+        input, select, textarea {
+            font-size: 16px;
+            padding: 6px;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            cursor: pointer;
+            padding: 10px 20px;
         }
     </style>
-    
 </head>
+
 <body>
 
-    <h1>Moje cesty</h1>
-    <p>Vítej na mém cestovatelském webu.</p>
+    <div class="obsah">
 
-    <h2>Moje výlety</h2>
+        <h1>Moje cesty</h1>
+        <p>Vítej na mém cestovatelském webu.</p>
 
-    <ul>
-        <li><a href="filipiny.html">Filipíny</a></li>
-        <li><a href="Londýn.html">Londýn</a></li>
-        <li><a href="Pariz.html">Paříž</a></li>
-    </ul>
+        <h2>Moje výlety</h2>
 
-    <h2>Přehled výletů</h2>
+        <ul>
+            <li><a href="filipiny.html">Filipíny</a></li>
+            <li><a href="Londýn.html">Londýn</a></li>
+            <li><a href="Pariz.html">Paříž</a></li>
+        </ul>
 
-    <table border="1">
-        <tr>
-            <th>Místo</th>
-            <th>Stát</th>
-            <th>Zajímavost</th>
-        </tr>
-        <tr>
-            <td>Paříž</td>
-            <td>Francie</td>
-            <td>Eiffelova věž</td>
-        </tr>
-        <tr>
-            <td>Londýn</td>
-            <td>Anglie</td>
-            <td>Big Ben</td>
-        </tr>
-        <tr>
-            <td>Filipíny</td>
-            <td>Filipíny</td>
-            <td>Krásné pláže</td>
-        </tr>
-    </table>
+        <h2>Přehled výletů</h2>
 
-    <h2>Moje oblíbená cesta</h2>
-    <p>Nejvíce se mi líbily Filipíny.</p>
+        <table border="1">
+            <tr>
+                <th>Místo</th>
+                <th>Stát</th>
+                <th>Zajímavost</th>
+            </tr>
+            <tr>
+                <td>Paříž</td>
+                <td>Francie</td>
+                <td>Eiffelova věž</td>
+            </tr>
+            <tr>
+                <td>Londýn</td>
+                <td>Anglie</td>
+                <td>Big Ben</td>
+            </tr>
+            <tr>
+                <td>Filipíny</td>
+                <td>Filipíny</td>
+                <td>Krásné pláže</td>
+            </tr>
+        </table>
 
-    <a href="https://www.google.com">Více informací</a>
+        <h2>Moje oblíbená cesta</h2>
+        <p>Nejvíce se mi líbily Filipíny.</p>
 
-    <h2>Tvůj oblíbený výlet</h2>
+        <a href="https://www.google.com">Více informací</a>
 
-    <form>
-        <label for="jmeno">Tvoje jméno:</label>
-        <input type="text" id="jmeno" name="jmeno">
-        <br><br>
+        <h2>Tvůj oblíbený výlet</h2>
 
-        <label for="misto">Oblíbené místo:</label>
-        <select id="misto" name="misto">
-            <option>Paříž</option>
-            <option>Londýn</option>
-            <option>Filipíny</option>
-        </select>
-        <br><br>
+        <form>
+            <label for="jmeno">Tvoje jméno:</label>
+            <input type="text" id="jmeno" name="jmeno">
+            <br><br>
 
-        <label for="zprava">Proč se ti tam líbilo?</label>
-        <br>
-        <textarea id="zprava" name="zprava" rows="4" cols="30"></textarea>
-        <br><br>
+            <label for="misto">Oblíbené místo:</label>
+            <select id="misto" name="misto">
+                <option>Paříž</option>
+                <option>Londýn</option>
+                <option>Filipíny</option>
+            </select>
+            <br><br>
 
-        <input type="submit" value="Odeslat">
-    </form>
+            <label for="zprava">Proč se ti tam líbilo?</label>
+            <br>
+            <textarea id="zprava" name="zprava" rows="4" cols="30"></textarea>
+            <br><br>
+
+            <input type="submit" value="Odeslat">
+        </form>
+
+    </div>
 
 </body>
 </html>
